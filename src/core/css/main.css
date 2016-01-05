@@ -1,0 +1,575 @@
+/* 
+Package: BathTime{r}
+File: main.scss
+(c) 2015 Brooke Dukes All Rights Reserved
+
+This is the main SCSS stylesheet which is compiled into CSS in core/css/main.css and used in the project. many of the styles here are based on HTML5 Boilerplate v5.0 ( http://h5bp.com/ ) which is under the  MIT License 
+
+*/
+/* ==========================================================================
+	Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+	By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+	https://github.com/matthieua/sass-css3-mixins/blob/master/css3-mixins.scss
+   ========================================================================== */
+/* line 43, ../../scss/main.scss */
+html {
+  color: white;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 50, ../../scss/main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 55, ../../scss/main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 60, ../../scss/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 69, ../../scss/main.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* line 78, ../../scss/main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 84, ../../scss/main.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ===== Bootstrap Alert v3.3.5 ==================================================
+   http://getbootstrap.com)
+   Copyright 2011-2015 Twitter, Inc.
+   Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  ========================================================================== */
+/* line 96, ../../scss/main.scss */
+.result {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+/* line 102, ../../scss/main.scss */
+.result:a {
+  font-weight: bold;
+}
+
+/* line 106, ../../scss/main.scss */
+.result.success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+
+/* line 111, ../../scss/main.scss */
+.result.success hr {
+  border-top-color: #c9e2b3;
+}
+
+/* line 114, ../../scss/main.scss */
+.result.success .alert-link {
+  color: #2b542c;
+}
+
+/* line 117, ../../scss/main.scss */
+.result.info {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+}
+
+/* line 122, ../../scss/main.scss */
+.result.info hr {
+  border-top-color: #f7e1b5;
+}
+
+/* line 125, ../../scss/main.scss */
+.result.info .alert-link {
+  color: #66512c;
+}
+
+/* line 128, ../../scss/main.scss */
+.result.fail {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+/* line 133, ../../scss/main.scss */
+.result.fail hr {
+  border-top-color: #e4b9c0;
+}
+
+/* line 136, ../../scss/main.scss */
+.result.fail .alert-link {
+  color: #843534;
+}
+
+/* line 140, ../../scss/main.scss */
+a.reset-timer {
+  color: #666;
+  display: block;
+  font-size: 0.8em;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* line 147, ../../scss/main.scss */
+a.reset-timer:hover {
+  color: #999;
+}
+
+/* line 150, ../../scss/main.scss */
+a.reset-timer {
+  display: none;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+/* line 157, ../../scss/main.scss */
+html {
+  font: 16px/26px 'Oxygen', Helvetica, Helvetica Neue, Arial, sans-serif;
+  color: #ffffff;
+  background: url("../../img/background.jpg") no-repeat #3FACC1;
+  background-size: cover;
+  height: 100%;
+  -webkit-transition: all 0.2s, linear;
+  -khtml-transition: all 0.2s, linear;
+  -moz-transition: all 0.2s, linear;
+  -ms-transition: all 0.2s, linear;
+  -o-transition: all 0.2s, linear;
+  transition: all 0.2s, linear;
+}
+
+/* line 168, ../../scss/main.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 5% 0 8%;
+}
+
+/* line 174, ../../scss/main.scss */
+.footer-container {
+  background-color: rgba(72, 72, 72, 0.4);
+}
+
+/* line 177, ../../scss/main.scss */
+footer p.left {
+  float: left;
+  color: #D4F2FC;
+}
+
+/* line 183, ../../scss/main.scss */
+footer p.right {
+  float: right;
+}
+/* line 185, ../../scss/main.scss */
+footer p.right a {
+  color: #D4F2FC;
+  text-decoration: none;
+}
+/* line 187, ../../scss/main.scss */
+footer p.right a::before {
+  font-family: "genericons";
+  font-size: 2em;
+}
+/* line 188, ../../scss/main.scss */
+footer p.right a[href*="github.com"]:before {
+  content: '\f200';
+}
+/* line 189, ../../scss/main.scss */
+footer p.right a[href*="twitter.com"]:before {
+  content: '\f202';
+}
+/* line 190, ../../scss/main.scss */
+footer p.right a[href*="brooke.codes"]:before {
+  content: '\f205';
+}
+/* line 192, ../../scss/main.scss */
+footer p.right a:hover {
+  color: white;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+/* line 201, ../../scss/main.scss */
+.main article {
+  background-color: rgba(72, 72, 72, 0.4);
+  left: 3%;
+  margin-right: 3%;
+  width: 88%;
+  margin-left: 0;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 12%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s, ease-in;
+  -khtml-transition: all 0.5s, ease-in;
+  -moz-transition: all 0.5s, ease-in;
+  -ms-transition: all 0.5s, ease-in;
+  -o-transition: all 0.5s, ease-in;
+  transition: all 0.5s, ease-in;
+}
+/* line 216, ../../scss/main.scss */
+.main article h1 {
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+  -webkit-transition: all 0.5s, ease-in;
+  -khtml-transition: all 0.5s, ease-in;
+  -moz-transition: all 0.5s, ease-in;
+  -ms-transition: all 0.5s, ease-in;
+  -o-transition: all 0.5s, ease-in;
+  transition: all 0.5s, ease-in;
+}
+/* line 223, ../../scss/main.scss */
+.main article p {
+  -webkit-transition: all 0.5s, ease-in;
+  -khtml-transition: all 0.5s, ease-in;
+  -moz-transition: all 0.5s, ease-in;
+  -ms-transition: all 0.5s, ease-in;
+  -o-transition: all 0.5s, ease-in;
+  transition: all 0.5s, ease-in;
+}
+
+/* line 229, ../../scss/main.scss */
+.main {
+  padding: 30px 0;
+}
+
+/* line 234, ../../scss/main.scss */
+.footer-container footer {
+  color: white;
+}
+
+/* line 239, ../../scss/main.scss */
+.photon-data .status {
+  float: left;
+}
+/* line 241, ../../scss/main.scss */
+.photon-data .status .genericon {
+  vertical-align: middle;
+  font-size: 48px;
+  color: #3C8EB4;
+  margin: -2px -15px 0 0;
+}
+/* line 246, ../../scss/main.scss */
+.photon-data .status .genericon.asleep {
+  color: #C9C9C9;
+}
+/* line 249, ../../scss/main.scss */
+.photon-data .status .genericon.ready {
+  color: #7CB57D;
+}
+/* line 252, ../../scss/main.scss */
+.photon-data .status .genericon.offline {
+  color: #C45F5E;
+}
+/* line 257, ../../scss/main.scss */
+.photon-data .shutdown {
+  font-size: 80%;
+  color: #e0e0e0;
+}
+/* line 261, ../../scss/main.scss */
+.photon-data .battery {
+  float: right;
+}
+/* line 264, ../../scss/main.scss */
+.photon-data:after {
+  clear: both;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+/* line 273, ../../scss/main.scss */
+.ie7 .title {
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+   Form elements 
+   Highly modified version of Flat Responsive Form Using CSS3
+   Copyright (c) 2015 by Rex Kirby (http://codepen.io/rexkirby/pen/Fdnlz)
+
+   ========================================================================== */
+/* line 284, ../../scss/main.scss */
+input[type='text'] {
+  color: #999999;
+  font-size: 1emp;
+  border-radius: 15px;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 45px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+}
+
+/* line 300, ../../scss/main.scss */
+input[type='text']:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3C8EB4;
+  color: #3C8EB4;
+  outline: none;
+}
+
+/* line 309, ../../scss/main.scss */
+label.genericon {
+  color: #3C8EB4;
+  display: inline-block;
+  font-size: 32px;
+  padding: 13px;
+  position: absolute;
+}
+
+/* line 317, ../../scss/main.scss */
+.icon-time {
+  display: inline-block;
+  font-style: normal;
+  position: absolute;
+  top: 1px;
+  font-family: "genericons";
+}
+
+/* line 325, ../../scss/main.scss */
+.button {
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 2px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-size: 1.3em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+/* line 343, ../../scss/main.scss */
+.button:hover {
+  background-color: #3C8EB4;
+}
+
+/* line 347, ../../scss/main.scss */
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 550px) {
+  /* line 368, ../../scss/main.scss */
+  .main article {
+    background-color: rgba(72, 72, 72, 0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    width: 70%;
+    margin: auto;
+    -webkit-transition: all 0.5s, ease-in;
+    -khtml-transition: all 0.5s, ease-in;
+    -moz-transition: all 0.5s, ease-in;
+    -ms-transition: all 0.5s, ease-in;
+    -o-transition: all 0.5s, ease-in;
+    transition: all 0.5s, ease-in;
+  }
+  /* line 379, ../../scss/main.scss */
+  .main article h1 {
+    font-size: 3em;
+    -webkit-transition: all 0.5s, ease-in;
+    -khtml-transition: all 0.5s, ease-in;
+    -moz-transition: all 0.5s, ease-in;
+    -ms-transition: all 0.5s, ease-in;
+    -o-transition: all 0.5s, ease-in;
+    transition: all 0.5s, ease-in;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* ===============
+      Maximal Width
+     =============== */
+  /* line 392, ../../scss/main.scss */
+  .wrapper {
+    width: 1026px;
+    /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* line 402, ../../scss/main.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 407, ../../scss/main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 418, ../../scss/main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 428, ../../scss/main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 432, ../../scss/main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 438, ../../scss/main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 442, ../../scss/main.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  /* line 451, ../../scss/main.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 460, ../../scss/main.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 465, ../../scss/main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 469, ../../scss/main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 473, ../../scss/main.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 478, ../../scss/main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 484, ../../scss/main.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 488, ../../scss/main.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 493, ../../scss/main.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 497, ../../scss/main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 504, ../../scss/main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

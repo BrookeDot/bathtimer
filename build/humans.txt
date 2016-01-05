@@ -1,0 +1,26 @@
+/* TEAM */
+
+	Developer: Brooke Dukes
+	Contact: bandonrandon [at] gmail.com
+	Website: brooke.codes
+	Twitter: @BandonRandon
+	From: Seattle, Washington
+	
+	Designer: Felix Wolfstrom
+	Contact: greyrain.com/#contact
+	From: Bainbridge Island, Washington
+
+
+/* THANKS */
+
+	All the people who have written tutorials and licensed their code under the open source license 	allowing other to learn. 
+
+
+
+
+/* SITE */
+	Last update:2015/11/15
+	Language: English
+	Technology:  HTML5, CSS3, jQuery, HTML5shiv, SCSS, PHP
+	IDE: Atom, FileZilla, Photoshop
+	
